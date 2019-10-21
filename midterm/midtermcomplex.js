@@ -9,6 +9,7 @@ var ell = 25;
 var oell = 20;
 var g = 200;
 var h = 190;
+var paused = 1;
 let win = false;
 
 let wall1, wall2, wall3, wall4, wall5, wall6, wall7, wall8, wall9, wall10, wall11, wall12, wall13, wall14, wall15; // Maze wall
