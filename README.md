@@ -7,3 +7,5 @@ Files converted:
 2-25-19.pde
 2-25-19(p2).pde
 2-15-19(p2).pde
+
+all but the midterm

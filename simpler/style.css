@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(237, 212, 255);
+    margin:0;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+}

@@ -99,7 +99,8 @@ noStroke();
 fill(0,0,0,18);
 quad(335, 150, 325, 120, 475, 125, 475, 145);
 triangle(525, 155, 475, 125, 475, 145);
-
+//fill(random(255),random(255),random(255),10);
+//square(0, 0, 600);
 //I wanted to make one of the tears change speed with the movement of the mouse but I couldn't do it without making the tear flow back up
 //I also wanted to add a halo of expanding light to the middle of the head but I couldn't do that without it effecting the tears 
 

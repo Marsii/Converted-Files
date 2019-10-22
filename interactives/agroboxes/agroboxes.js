@@ -3,10 +3,10 @@
 //I'm honestly kinda tired making this so it's not as interesting as I'd like
 
 var n = 100;
-var r = 10;
+var r = 15;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(600, 600);
   background(255);
 }
 
@@ -15,8 +15,8 @@ function draw() {
   rectMode(CENTER);
 
   // nested for loop
-  for (let x = 0; x <= 500; x += 20+r) { 
-    for (let y = 0; y<=500; y += 20+r) {
+  for (let x = 0; x <= 600; x += 20+r) { 
+    for (let y = 0; y<=600; y += 20+r) {
 
       
       // find the distance from mouse point and ellipse radii
