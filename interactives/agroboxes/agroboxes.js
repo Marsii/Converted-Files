@@ -22,8 +22,8 @@ function draw() {
       // find the distance from mouse point and ellipse radii
       var d = dist(mouseX+random(80), mouseY+random(80), x, y);
 
-      // if the distance is less than r for an of the cirlces... color those cicles black
-      if (d < 80) {
+      // if the distance is less than r for an of the cirlces... color those cicles differently
+      if (d < 100) {
         fill(mouseY/3, mouseX/3, random(100,255));
         
         
