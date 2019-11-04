@@ -4,7 +4,7 @@
 //Rules: Don't touch the walls too much and get to the ellipse in the center to win
 
 let button = false; //
-var counter = 100; //"Health bar"
+var counter = 150; //"Health bar"
 var ell = 25;
 var oell = 20;
 var g = 200;
@@ -106,7 +106,7 @@ class maze {
         this.w = Inw;
         this.h = Inh;
     }
-}
+
 
 //Fuction shows walls
 display() {
@@ -160,6 +160,7 @@ touchy() {
                 fill(255, 0, 0);
                 textSize(50);
                 textAlign(CENTER, CENTER);
+                fill(0);
                 text("You Lose", width / 2, height / 2);
 
             } else if (win == true) {
@@ -169,4 +170,5 @@ touchy() {
         }
     }
 
+}
 }
