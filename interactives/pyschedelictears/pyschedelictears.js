@@ -23,7 +23,10 @@ function draw() {
 
   //fill(255,255,255,1); // Fun Halo effects
   //ellipse(300,100,growth+10,growth+10);
-  
+    noFill();
+    strokeWeight(3);
+    stroke(255-random(20), 255-random(20), 255-random(20),50);
+    ellipse(300, 50, 10 + mouseX/2); // This ellipse will expand and contract with mouse
  
   //if (mousePressed){
   //  rate = -1;
@@ -58,31 +61,32 @@ function draw() {
   strokeWeight(3);//pupil
   ellipse(400, 200, 20, 20);
   
-  if (mouseX > 300){  //Does the ball exceed hit the right wall?
+   if (mouseX > 300){  //Is the mouse on the right?
    moveboolean = false;
  }
  
- if (mouseX < 300){  //Does the ball thie the left wall?
+ if (mouseX < 300){  //Is the mouse on the left?
    moveboolean = true;
  }
  
-  if (moveboolean == false){  // if the ball hits the right wall move the opposite direction...left
+  if (moveboolean == false){  // the tears on the right move
    mover= mover+0.7;
  }
  
-  if (moveboolean == true){  // if the ball hits the left wall move the opposite direction... right
+  if (moveboolean == true){  // the tears on the left move
    movel= movel+0.7;
  }
+    
  //tears right side
-  stroke(mouseY, 1+(.05*mouseY), mouseX);
-  fill(mouseY, 1+(.05*mouseY), mouseX);
+  stroke(mouseY + random(10), 1+(1/2*mouseY), mouseX+ random(10));
+  fill(mouseY + random(10), 1+(1/2*mouseY), mouseX + random(10));
   ellipse (400, 220 + mover*3, Tear, Tear); // animates the object down the page
   ellipse (380, 220 + mover, Tear, Tear); // animates the object down the page
   ellipse (420, 220 + mover/2, Tear, Tear); // animates the object down the page
 
 //tears left side
-  stroke(119, mouseY, mouseX);
-  fill(119, mouseY, mouseX);
+  stroke(random(150,190), mouseY+ random(10), mouseX+ random(10));
+  fill(random(150,190), mouseY + random(10), mouseX + random(10));
   ellipse (200, 220 + movel/2.5, Tear, Tear); // animates the object down the page
   ellipse (180, 220 + movel*1.5, Tear, Tear); // animates the object down the page
   ellipse (220, 220 + movel*2, Tear, Tear); // animates the object down the page
